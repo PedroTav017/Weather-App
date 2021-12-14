@@ -1,0 +1,12 @@
+.lowerDisplay {
+  position: relative;
+  background-color: #245266;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+}
+
+.lowerDisplay p {
+  margin: 0 20px;
+}

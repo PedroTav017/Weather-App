@@ -1,0 +1,8 @@
+.loading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 64px);
+  background-color: #245266;
+}

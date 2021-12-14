@@ -1,0 +1,92 @@
+.interactionBar {
+  position: relative;
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #316b83;
+  height: 64px;
+}
+
+/* DROPDOWN */
+.dropButton {
+  padding: 10px 20px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: Jost;
+  font-size: 16px;
+}
+
+.dropButton:hover {
+  cursor: pointer;
+}
+
+.dropDown {
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  z-index: 9999;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.dropDown li {
+  padding: 10px;
+  background-color: cadetblue;
+}
+
+.dropDown li:hover {
+  background-color: #245266;
+  cursor: pointer;
+}
+
+/* SLIDER */
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #245266;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  background-color: #ec6e4c;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+  border-radius: 50%;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
